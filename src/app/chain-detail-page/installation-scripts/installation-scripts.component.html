@@ -15,6 +15,10 @@
       </div>
       <pre><code class="language-bash">source <(curl -s {{automaticScriptUrl}})</code></pre>
     </div>
+    <div class="row" id="update" *ngIf="upgradeScriptContent">
+      <p class="title">Upgrade script</p>
+      <pre><code class="language-bash">{{upgradeScriptContent}}</code></pre>
+    </div>
     <div class="row" id="manual">
       <p class="title">Manual Installation</p>
       <pre><code class="language-bash"># install dependencies, if needed
